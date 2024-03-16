@@ -1,4 +1,4 @@
-//* Task 1
+//* Task 1 Замовлення дроїдів
 
 // 1. оголосити функцію makeTransaction(quantity, pricePerDroid, customerCredits) яка складає та повертає повідомлення про купівлю ремонтних дроїдів.
 
