@@ -6,17 +6,16 @@
 
 // - Якщо довжина рядка дорівнює або менша за ( = ; > ) maxLength, то функція повертає початковий рядок без змін.
 
-// - Якщо довжина перевищує maxLength ( > ), то функція обрізає рядок до maxLength символів, додає трикрапку "..." в кінці та повертає обрізану версію.
-
-//? maxLength -
+// - Якщо довжина перевищує maxLength ( > ), то функція обрізає рядок до maxLength символів, додає трикрапку "..." в кінці та повертає обрізану версію. slice();
 
 function formatMessage(message, maxLength) {
   const msg = message.length;
 
   if (msg <= maxLength) {
     return message;
-  } else if (msg >= maxLength) {
-    return message.substring(0, maxLength) + "...";
+  } else {
+    return message.slice(0, maxLength) + "...";
+    // return message.substring(0, maxLength) + "...";
   }
 }
 
