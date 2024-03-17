@@ -22,9 +22,6 @@ function getShippingCost(country) {
     case "Australia":
       msg = `Shipping to ${country} will cost 170 credits`;
       break;
-    case "Germany":
-      msg = "Sorry, there is no delivery to your country";
-      break;
     case "China":
       msg = `Shipping to ${country} will cost 100 credits`;
       break;
@@ -34,9 +31,8 @@ function getShippingCost(country) {
     case "Jamaica":
       msg = `Shipping to ${country} will cost 120 credits`;
       break;
-    case "Sweden":
-      msg = "Sorry, there is no delivery to your country";
-      break;
+    default: 
+    msg = "Sorry, there is no delivery to your country";
   }
   return msg;
 }
